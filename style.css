@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&family=Lobster&display=swap');
+
+:root {
+  --clr: rgb(255, 17, 219);
+  --outline: 2px solid rgb(231, 17, 255);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  background-image: url(./bg2.png);
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-color: rgb(169, 12, 180);
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  background: #fffffff7;
+  margin-bottom: 1rem;
+}
+
+header {
+  padding: 1rem;
+  width: 70%;
+  margin: 1em auto;
+  font-family: 'Labrada', serif;
+  margin-bottom: 0;
+}
+
+header h1 {
+  font-size: 2.2rem;
+}
+
+main {
+  max-width: 70%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lobster', cursive;
+}
+
+img {
+  max-width: 100%;
+  margin-top: -1rem;
+}
+
+#image-frame {
+  font-size: x-large;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#explanation,
+#score {
+  padding: 1rem;
+  text-align: center;
+}
+
+#options {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: .5rem;
+}
+
+button{
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.1rem;
+  background: none;
+  padding: .60em 1.5em;
+  color: var(--clr);
+  outline: var(--outline);
+  border: var(--outline);
+  border-radius: 10px;
+  outline-offset: -2px;
+  transition: outline-width 200ms ease, outline-offset 200ms ease;
+  font-family: 'Labrada', serif;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  outline: var(--outline);
+  outline-width: 5px;
+  outline-offset: -5px;
+}
+
+#refresh{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+#btn-refresh{
+  background: #f601a4ae;
+  color: white;
+  padding: 20px;
+  outline: none;
+  border-radius: 100%;
+}
+
+.correct {
+  background-color: lightgreen;
+}
+
+.incorrect {
+  background-color: lightpink;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .container {
+    margin: 0 auto;
+    width: 70%;
+    background: #fffffff7;
+    margin-bottom: 1rem;
+  }
+
+  #options {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: .5rem;
+    max-width: 70%;
+    margin-top: -1rem;
+  }
+  body{
+    background-size:cover;
+  }
+}
